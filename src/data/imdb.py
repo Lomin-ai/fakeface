@@ -783,7 +783,7 @@ class WGAN_GP(DCGAN):
     pass
 
 
-class Photoshop(Photoshop_source):
+class Photoshop(Imdb):
 
     def __init__(self, cfg, name=None, virtual=False, logger=None, **kwargs):
         super(Photoshop, self).__init__(cfg, name=name, virtual=virtual, logger=logger, **kwargs)
