@@ -1,0 +1,44 @@
+src_path: src
+data_path: dataset
+output_path: output
+log_path: output/log
+test_path: output/test
+cache_path: cache
+
+dataset:
+  mean: 0.45
+  std: 0.14
+  beta_a: 0
+  beta_b: 0
+  photoshop_ext: jpg
+
+train:
+  optim: sgd
+  max_iter: 16777215
+  period_print: 100
+  period_image: 100
+  period_checkpoint: 1000
+  period_val: 1000
+  period_lr: 9999999 # unit: epoch 
+  batch_size: 16 
+  batch_size_val: 16 
+  batch_size_test: 16 
+  lr_initial: 0.001
+  lr_decay: 0.1
+  momentum: 0.9
+  nesterov: false   # SGD
+  beta1: 0.9        # ADAM
+  beta2: 0.999      # ADAM
+  amsgrad: true     # ADAM
+  data_loader:
+    shuffle: true
+    drop_last: true
+    num_workers: 10
+    pin_memory: true
+
+test:
+  seed: 0
+
+model: 
+  name: se_resnext50_32x4d
+  finetune: false

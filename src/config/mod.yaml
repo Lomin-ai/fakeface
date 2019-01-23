@@ -1,0 +1,28 @@
+dataset:
+  min_original_resolution: 64
+  resolution: 256 
+  resolution_feed: 256
+  resolution_thres_factor: 0.9
+  ar: 1.0 # aspect ratio
+  minimal: false # used for quick test
+  minimal_set:
+    real: 
+      CelebA-HQ: 1.0
+    fake: 
+      Glow_CelebA-HQ: 1.0
+  angle_th: 30
+  angle_range: 10
+  real_set:
+    CelebA-HQ: 0.0
+    UMDFaces: 0.0
+  fake_set:
+    Glow_CelebA-HQ: 0.0
+    Glow_UMDFaces: 0.0
+  num_val:
+    CelebA-HQ: 100
+    UMDFaces: 100
+    Glow_CelebA-HQ: 100
+    Glow_UMDFaces: 100
+  num_test:
+    CelebA-HQ: 500
+    UMDFaces: 500

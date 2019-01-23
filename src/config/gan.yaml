@@ -1,0 +1,43 @@
+dataset:
+  min_original_resolution: 64
+  resolution: 128
+  resolution_feed: 128
+  resolution_thres_factor: 0.9
+  ar: 1.0 # aspect ratio
+  minimal: false # used for quick test
+  minimal_set:
+    real: 
+      CelebA-HQ: 1.0
+    fake: 
+      PGGAN_published_100k: 1.0
+  angle_th: 30
+  angle_range: 10
+  real_set:
+    UMDFaces: 0.0
+    CelebA-HQ: 0.0
+    CelebA: 0.0
+    IJB-C: 0.0 
+    AFLW: 0.0 
+  fake_set:
+    PGGAN_published_100k: 0.0 
+    PGGAN_published_nGPUs: 0.0 
+    PGGAN_trained: 0.0 
+    BEGAN: 0.0 
+    DCGAN: 0.0
+    LSGAN: 0.0
+    WGAN-GP: 0.0
+    DRAGAN: 0.0 
+  num_val:
+    CelebA: 100 # 202k
+    CelebA-HQ: 100 # 30k
+    AFLW: 30 # 26k
+    IJB-C: 20 # 21k
+    UMDFaces: 100 # 391k
+    PGGAN_published_100k: 100 # 100k
+    PGGAN_published_nGPUs: 100
+    PGGAN_trained: 100
+    BEGAN: 50
+    DCGAN: 50
+    LSGAN: 50
+    WGAN-GP: 50
+    DRAGAN: 50

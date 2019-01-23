@@ -1,0 +1,63 @@
+dataset:
+  min_original_resolution: 64
+  resolution: 128
+  resolution_feed: 128
+  resolution_thres_factor: 0.9
+  ar: 1.0 # aspect ratio
+  minimal: false # used for quick test
+  angle_th: 90
+  angle_range: 90
+  minimal: false
+  minimal_set:
+    real:
+      CelebA-HQ: 0.5
+      UMDFaces: 0.5
+      # Photoshop_source: 1.0
+    fake:
+      PGGAN_published_100k: 0.5
+      UMDFaces: 0.45
+      Photoshop: 0.05
+  real_set:
+    UMDFaces: 0.0
+    CelebA-HQ: 0.0
+    CelebA: 0.0
+    IJB-C: 0.0 
+    AFLW: 0.0 
+    Photoshop_source: 0.0
+    NoFace: 0.0
+  fake_set:
+    PGGAN_published_100k: 0.0 
+    PGGAN_published_nGPUs: 0.0 
+    PGGAN_trained: 0.0 
+    UMDFaces: 0.0
+    Photoshop: 0.0 # 8916
+    Sample_1_M2_Syn: 0.0 # 447
+    Trial_M2_Syn: 0.0 # 684
+    Challenge_M2_Syn: 0.0 # 593
+    NoFace: 0.0
+  num_val:
+    CelebA: 100 # 202k
+    CelebA-HQ: 100 # 30k
+    AFLW: 30 # 26k
+    IJB-C: 20 # 21k
+    UMDFaces: 100 # 391k
+    PGGAN_published_100k: 100 # 100k
+    PGGAN_published_nGPUs: 100
+    PGGAN_trained: 100
+    Photoshop: 30 # 9k
+    Photoshop_source: 30 # 9k
+    Sample_1_M2_Syn: 10 # 447
+    Trial_M2_Syn: 10 # 684
+    Challenge_M2_Syn: 10 # 593
+    NoFace: 10 # 1.2M
+  swap_style:
+    warp: 0.1
+    smoothwarp: 0.3
+    seamless: 0.6
+  swap_parts:
+    eyes: 0.2
+    nose: 0.2
+    mouth: 0.2
+    face: 0.2
+    half: 0.2
+    head: 0.0

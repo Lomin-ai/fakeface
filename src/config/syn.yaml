@@ -1,0 +1,42 @@
+dataset:
+  min_original_resolution: 100
+  resolution: 128 # resize to this value. shorter side.
+  resolution_feed: 128
+  resolution_thres_factor: 0.8 # shorter side of padded minimum box
+  ar: 1.0 # aspect ratio
+  minimal: false
+  minimal_set:
+    real: 
+      UMDFaces: 1.0
+    fake: 
+      UMDFaces: 1.0
+  angle_th: 30
+  angle_range: 10 # set nonzero value to enable this option
+  lab_range: 0 # set nonzero value to enable this option
+  size_range: 0 # set nonzero value to enable this option
+  real_set:
+    UMDFaces: 0.0 
+    Photoshop_source: 0.0
+  fake_set:
+    UMDFaces: 0.0 
+    Photoshop: 0.0 # 8916
+    Sample_1_M2_Syn: 0.0 # 447
+    Trial_M2_Syn: 0.0 # 684
+    Challenge_M2_Syn: 0.0 # 593
+  num_val:
+    UMDFaces: 100 # 391k
+    Photoshop: 30 # 9k
+    Photoshop_source: 30 # 9k
+    Sample_1_M2_Syn: 10 # 447
+    Trial_M2_Syn: 10 # 684
+    Challenge_M2_Syn: 10 # 593
+  swap_style:
+    warp: 0.1
+    seamless: 0.9
+  swap_parts:
+    eyes: 0.2
+    nose: 0.2
+    mouth: 0.2
+    face: 0.2
+    half: 0.2
+    head: 0.0
